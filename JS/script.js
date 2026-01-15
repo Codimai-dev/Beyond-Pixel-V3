@@ -108,3 +108,36 @@ buttons.forEach(btn => {
 
 // Log initialization
 console.log('Beyond Pixel - Ready');
+
+let str = " "
+const span = document.getElementById("cnt");
+
+const words = ["Intelligence", "Impact"];
+let wordIndex = 0;
+let charIndex = 0;
+let typing = true;
+
+function type() {
+  const word = words[wordIndex];
+
+  if (typing) {
+    span.textContent = word.slice(0, ++charIndex);
+
+    if (charIndex === word.length) {
+      typing = false;
+      return setTimeout(type, 1200); // pause after typing
+    }
+  } else {
+    span.textContent = word.slice(0, --charIndex);
+
+    if (charIndex === 0) {
+      typing = true;
+      wordIndex = (wordIndex + 1) % words.length;
+      return setTimeout(type, 500); // pause before next word
+    }
+  }
+
+  setTimeout(type, typing ? 120 : 80); // typing vs deleting speed
+}
+
+type();
