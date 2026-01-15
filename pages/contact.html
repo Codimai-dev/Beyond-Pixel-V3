@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Beyond Pixel - Get in touch for AI SaaS solutions and custom consulting.">
+    <title>Contact Us | Beyond Pixel</title>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../CSS/style.css">    
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Beyond Pixel</a>
+
+                <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="offerings.html" class="nav-link">Offerings</a></li>
+                <li><a href="../index.html#how-we-work" class="nav-link">How We Work</a></li>
+                <li><a href="about.html" class="nav-link active">About / Founders</a></li>
+                <li><a href="../index.html#insights" class="nav-link">Insights</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+            </ul>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Intro -->
+    <section class="page-intro section-lg">
+        <div class="container">
+            <h1 class="fade-in">Get in Touch</h1>
+            <p class="hero-description mt-md fade-in" style="max-width: 600px;">
+                Ready to transform your business with intelligence? Reach out to explore our platform or book a
+                strategic consulting session.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left: Contact Form -->
+                <div class="contact-form-container fade-in">
+                    <h3 class="mb-lg">Send us a message</h3>
+                    <form action="#" class="main-contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" placeholder="john@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option value="saas">AI SaaS Platform Inquiry</option>
+                                <option value="consulting">Custom AI Consulting</option>
+                                <option value="audit">Free AI Audit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell us about your needs..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Right: Other Options -->
+                <div class="contact-methods-container fade-in">
+                    <!-- Calendly Placeholder -->
+                    <div class="method-card calendly-card mb-xl">
+                        <div class="method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg></div>
+                        <div class="method-content">
+                            <h4>Book a Call</h4>
+                            <p>Schedule a 20-minute discovery call via Calendly.</p>
+                            <a href="#" class="btn btn-secondary btn-sm mt-sm">Open Calendar</a>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp CTA -->
+                    <div class="method-card whatsapp-card mb-xl">
+                        <div class="method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg></div>
+                        <div class="method-content">
+                            <h4>Chat on WhatsApp</h4>
+                            <p>Get instant answers to your questions.</p>
+                            <a href="#" class="btn btn-secondary btn-sm mt-sm">Start Chat</a>
+                        </div>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="method-card email-card">
+                        <div class="method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg></div>
+                        <div class="method-content">
+                            <h4>Email Us Directly</h4>
+                            <p>For detailed inquiries and collaborations.</p>
+                            <a href="mailto:hello@beyondpixel.com"
+                                class="text-accent font-bold mt-xs block">hello@beyondpixel.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Address & Identity -->
+    <section class="identity-section section-lg bg-light">
+        <div class="container">
+            <div class="identity-grid">
+                <div class="identity-text fade-in">
+                    <span class="offering-label">Our Base</span>
+                    <h2 class="mt-sm">Beyond Pixel Ventures</h2>
+                    <p class="lead mt-md">Mumbai, India</p>
+                    <p class="text-secondary">Innovating from the heart of India's tech hub, bringing world-class AI
+                        systems to global enterprises.</p>
+                </div>
+                <div class="identity-visual fade-in">
+                    <div class="mumbai-banner">
+                        <span class="banner-tag">AI FROM INDIA, TO THE WORLD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Left: Logo & Positioning -->
+                <div class="footer-brand">
+                    <a href="../index.html" class="nav-logo">Beyond Pixel</a>
+                    <p class="mt-sm">Transforming businesses with Intelligence and Impact. We bridge the gap between AI
+                        potential and business outcomes.</p>
+                </div>
+
+                <!-- Center: Navigation Links -->
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                     <ul>
+                        <li><a href="../index.html#how-we-work">How We Work</a></li>
+                        <li><a href="offerings.html">Offerings</a></li>
+                        <li><a href="../index.html#insights">Insights</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right: Contact & Address -->
+                <div class="footer-address">
+                    <h4>Contact Us</h4>
+                    <p><a href="mailto:hello@beyondpixel.com" class="footer-email">hello@beyondpixel.com</a></p>
+                    <div class="address-block mt-md">
+                        <strong>Beyond Pixel Ventures</strong><br>
+                        Mumbai, India<br>
+                        <span class="text-accent">AI from India, to the world</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Beyond Pixel Ventures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

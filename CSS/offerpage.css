@@ -1,0 +1,96 @@
+
+/* ============================================
+   OFFERINGS PAGE SPECIFIC
+   ============================================ */
+.page-intro {
+  background-color: var(--color-primary-pure);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.alternating-row {
+  display: flex;
+  align-items: start;
+  gap: var(--space-3xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.alternating-row.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.alternating-content, .alternating-visual {
+  flex: 1;
+}
+
+.placeholder-visual {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: var(--color-primary);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  gap: var(--space-sm);
+  transition: all var(--transition-base);
+}
+
+.placeholder-visual:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+}
+
+.benefit-tag {
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+}
+
+.framework-step-large {
+  background-color: var(--color-primary-pure);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-2xl);
+  position: relative;
+  transition: all var(--transition-base);
+}
+
+.framework-step-large:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-8px);
+}
+
+.framework-step-large .framework-number {
+  width: 40px;
+  height: 40px;
+  font-size: var(--font-size-base);
+}
+
+.consulting-framework {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+@media (max-width: 1024px) {
+  .alternating-row, .alternating-row.row-reverse {
+    flex-direction: column;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+  
+  .consulting-framework {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
