@@ -451,7 +451,7 @@ section {
 /* Hero Responsive */
 @media (max-width: 1024px) {
   .hero-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
-  .hero-visual { order: -1; }
+  .hero-visual { order: 1; }
   .hero-visual-container { max-width: 400px; margin: 0 auto; }
 }
 
