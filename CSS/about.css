@@ -50,19 +50,30 @@
 
 /* Founders Section */
 .founders-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: var(--space-2xl);
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .founder-card {
+  max-width: 1200px;
   background-color: var(--color-primary-pure);
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-2xl);
   padding: var(--space-xl);
   transition: all var(--transition-base);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 20px;
+}
+@media (max-width:789px){
+  .founder-card{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
 }
 
 .founder-card:hover {
