@@ -310,7 +310,7 @@
     return `
       <div class="product-card-horizontal reveal fade-up ${isHub ? 'featured-hub-card' : ''}" data-stage="${stageNum}">
         <div class="card-content-side">
-          <span class="category-tag" ${isHub ? 'style="background: #a855f7;"' : ''}>
+          <span class="category-tag">
             <i data-lucide="${tool.iconName}" style="width: 12px; margin-right: 5px;"></i> ${tool.category}
           </span>
           <h2 class="product-name">${tool.name}</h2>
