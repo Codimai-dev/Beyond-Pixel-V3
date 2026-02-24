@@ -23,6 +23,9 @@
 .philosophy-card {
   padding: var(--space-2xl);
   border-left: 4px solid var(--color-accent);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
+  backdrop-filter: blur(10px);
 }
 
 .philosophy-list {
@@ -60,14 +63,14 @@
 
 .founder-card {
   max-width: 1200px;
-  background-color: var(--color-primary-pure);
-  border: 1px solid var(--color-border-light);
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-2xl);
   padding: var(--space-xl);
   transition: all var(--transition-base);
   display: grid;
   grid-template-columns: 40% 60%;
-  gap: 20px;
+  gap: 30px;
 }
 @media (max-width:789px){
   .founder-card{

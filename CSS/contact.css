@@ -13,11 +13,11 @@
 }
 
 .contact-form-container {
-  background-color: var(--color-primary-pure);
-  border: 1px solid var(--color-border-light);
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-2xl);
   padding: var(--space-2xl);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
 }
 
 .main-contact-form .form-row {
@@ -45,8 +45,8 @@
 .form-group textarea {
   width: 100%;
   padding: 12px 16px;
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-border-light);
+  background-color: var(--color-primary-pure);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   font-family: var(--font-primary);
   font-size: var(--font-size-sm);
@@ -70,8 +70,8 @@
   display: flex;
   gap: var(--space-md);
   padding: var(--space-lg);
-  background-color: var(--color-primary-pure);
-  border: 1px solid var(--color-border-light);
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   transition: all var(--transition-base);
 }

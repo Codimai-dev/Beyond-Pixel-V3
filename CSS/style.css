@@ -7,19 +7,19 @@
    CSS CUSTOM PROPERTIES (Design Tokens)
    ============================================ */
 :root {
-  /* Color Palette */
-  --color-primary: #FAFBFC;           /* Off-white */
-  --color-primary-pure: #FFFFFF;      /* Pure white */
-  --color-accent: #0066FF;            /* Electric Blue */
-  --color-accent-hover: #0052CC;      /* Darker blue for hover */
-  --color-accent-light: #E6F0FF;      /* Light blue for backgrounds */
-  --color-secondary: #2C2C2C;         /* Charcoal */
-  --color-secondary-light: #4A4A4A;   /* Medium grey */
-  --color-text-primary: #1A1A1A;      /* Almost black */
-  --color-text-secondary: #6B6B6B;    /* Medium grey text */
-  --color-text-muted: #9E9E9E;        /* Light grey text */
-  --color-border: #E5E5E5;            /* Subtle borders */
-  --color-border-light: #F0F0F0;      /* Very subtle borders */
+  /* Color Palette - Deeper Dark Blue & Black Theme */
+  --color-primary: #030712;           /* Deepest Midnight Blue */
+  --color-primary-pure: #000000;      /* Absolute Black */
+  --color-accent: #3B82F6;            /* Vibrant Blue */
+  --color-accent-hover: #60A5FA;      /* Lighter blue for hover */
+  --color-accent-light: rgba(59, 130, 246, 0.1); /* Translucent accent */
+  --color-secondary: #0F172A;         /* Deep slate */
+  --color-secondary-light: #1E293B;   /* Slate blue */
+  --color-text-primary: #F8FAFC;      /* Off-white text */
+  --color-text-secondary: #94A3B8;    /* Muted slate text - better for dark mode */
+  --color-text-muted: #64748B;        /* Muted grey text */
+  --color-border: #1E293B;            /* Subtle borders */
+  --color-border-light: #0F172A;      /* Very subtle borders */
   
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -66,11 +66,11 @@
   --radius-full: 9999px;
   
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-  --shadow-accent: 0 10px 30px -5px rgba(0, 102, 255, 0.15);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  --shadow-accent: 0 10px 30px -5px rgba(59, 130, 246, 0.3);
   
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -175,7 +175,7 @@ section {
   left: 0;
   right: 0;
   height: var(--nav-height);
-  background-color: rgba(250, 251, 252, 0.85);
+  background-color: rgba(3, 7, 18, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border-light);
@@ -185,7 +185,7 @@ section {
 
 
 .nav.scrolled {
-  background-color: rgba(250, 251, 252, 0.95);
+  background-color: rgba(0, 0, 0, 0.95);
   box-shadow: var(--shadow-md);
 }
 
@@ -391,6 +391,8 @@ section {
   display: flex;
   align-items: center;
   padding: 20px 0;
+  background: radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
 }
 
 .hero-grid {
@@ -443,7 +445,7 @@ section {
 .hero-visual-container {
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -451,7 +453,9 @@ section {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 20px 40px rgba(0, 102, 255, 0.1));
+  border-radius: var(--radius-lg);
+  filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.15));
+  mix-blend-mode: lighten; /* Blends dark background of image into page */
 }
 
 .visual-overlay {
@@ -459,9 +463,9 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  background: radial-gradient(circle, rgba(0, 102, 255, 0.05) 0%, transparent 70%);
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
   pointer-events: none;
   z-index: -1;
 }
@@ -789,7 +793,7 @@ section {
   right: -5px;
   width: 28px;
   height: 28px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent);
   color: var(--color-primary-pure);
   border-radius: var(--radius-full);
   display: flex;
@@ -886,13 +890,14 @@ section {
   top: var(--space-md);
   right: var(--space-md);
   padding: 4px 12px;
-  background-color: var(--color-secondary);
-  color: var(--color-primary-pure);
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
   font-size: 10px;
   font-weight: var(--font-weight-bold);
   border-radius: var(--radius-full);
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: 1px solid var(--color-accent);
 }
 
 .case-card-content h3 {
@@ -912,7 +917,7 @@ section {
 .newsletter-section {
   background-color: var(--color-secondary);
   padding: var(--space-3xl) 0;
-  color: var(--color-primary-pure);
+  color: var(--color-text-primary);
 }
 
 .newsletter-grid {
@@ -923,12 +928,12 @@ section {
 }
 
 .newsletter-content h2 {
-  color: var(--color-primary-pure);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-sm);
 }
 
 .newsletter-content p {
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-base);
   margin-bottom: 0;
 }
@@ -947,7 +952,7 @@ section {
   background: transparent;
   border: none;
   padding: 0 var(--space-lg);
-  color: var(--color-primary-pure);
+  color: var(--color-text-primary);
   font-family: var(--font-primary);
   font-size: var(--font-size-sm);
 }
@@ -995,10 +1000,10 @@ section {
    FOOTER
    ============================================ */
 .footer {
-  background-color: white;
+  background-color: var(--color-primary-pure);
   padding: var(--space-3xl) 0 var(--space-lg);
-  color: black;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--color-text-primary);
+  border-top: 1px solid var(--color-border);
 }
 
 .footer-grid {
@@ -1006,11 +1011,10 @@ section {
   grid-template-columns: 2fr 1fr 1.5fr;
   gap: var(--space-2xl);
   margin-bottom: var(--space-2xl);
-
 }
 
 .footer-brand .nav-logo {
-  color: black;
+  color: var(--color-text-primary);
   font-size: var(--font-size-xl);
   margin-bottom: var(--space-sm);
   text-decoration: none;
@@ -1020,7 +1024,7 @@ section {
 .footer-brand p {
   max-width: 350px;
   font-size: var(--font-size-sm);
-  color: black;
+  color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
 }
 
@@ -1042,35 +1046,39 @@ section {
 }
 
 .footer-links a {
-  color: black;
+  color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
   text-decoration: none;
   transition: all var(--transition-base);
   position: relative;
 }
-.footer-links a::before{
+
+.footer-links a::before {
   content: '';
   width: 0%;
   height: 1px;
   position: absolute;
   top: 100%;
   left: 0%;
-  background-color: black;
+  background-color: var(--color-accent);
   z-index: 10;
   transition: all 0.4s ease-in;
   transform-origin: center;
 }
+
 .footer-links a:hover {
+  color: var(--color-text-primary);
   padding-left: 5px;
 }
+
 .footer-links a:hover::before {
- width: 100%;
+  width: 100%;
 }
 
 .footer-email {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-semibold);
-  color: black;
+  color: var(--color-text-primary);
   text-decoration: none;
   border-bottom: 2px solid var(--color-accent);
   transition: all var(--transition-base);
@@ -1085,18 +1093,18 @@ section {
 
 .address-block {
   font-size: var(--font-size-sm);
-  color: black;
+  color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
 }
 
 .footer-bottom {
   padding-top: var(--space-lg);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--color-border);
 }
 
 .footer-bottom p {
   font-size: var(--font-size-xs);
-  color: rgba(15, 15, 15, 0.671);
+  color: var(--color-text-muted);
   margin-bottom: 0;
 }
 
@@ -1136,6 +1144,15 @@ section {
   white-space: nowrap;
   border-width: 0;
 }
+
+.text-accent { color: var(--color-accent) !important; }
+.text-secondary { color: var(--color-text-secondary) !important; }
+.text-center { text-align: center; }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-xl { margin-top: var(--space-xl); }
+.mt-2xl { margin-top: var(--space-2xl); }
+.mb-3xl { margin-bottom: var(--space-3xl); }
 
 *:focus-visible {
   outline: 2px solid var(--color-accent);
