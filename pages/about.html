@@ -21,9 +21,9 @@
     <!-- Sticky Navigation -->
     <nav class="nav" id="navbar">
         <div class="nav-container">
-              <div class="flex">
-                            <img src="../images/logo.png" alt="logo" class="logo">
-            <a href="#" class="nav-logo">Beyond Pixel</a>
+            <div class="flex">
+                <img src="../images/logo.png" alt="logo" class="logo">
+                <a href="#" class="nav-logo">Beyond Pixel</a>
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="../index.html#home" class="nav-link">Home</a></li>
@@ -44,18 +44,19 @@
 
     <!-- Section 1: Company Story -->
     <section class="company-story section-lg">
+        <canvas id="hero-particles" class="particles-canvas"></canvas>
         <div class="container">
             <div class="story-grid">
-                <div class="story-content fade-in">
+                <div class="story-content reveal fade-left">
                     <span class="offering-label">Our Story</span>
-                    <h1 class="mb-lg">Why Beyond Pixel exists</h1>
+                    <h1>Why Beyond Pixel exists</h1>
                     <p class="lead">Beyond Pixel was born out of a simple observation: most AI projects fail because
                         they start with technology, not business outcomes.</p>
                     <p>We saw companies buying expensive tools without ROI clarity, drowning in manual processes despite
                         "automation," and building disconnected systems that created more noise than value. We decided
                         to build a firm that puts business impact first.</p>
                 </div>
-                <div class="story-philosophy fade-in">
+                <div class="story-philosophy reveal fade-right">
                     <div class="philosophy-card card">
                         <h3 class="text-accent">Business-First AI Philosophy</h3>
                         <p>We don't just build models; we build systems that solve specific problems. Our philosophy is
@@ -84,24 +85,31 @@
         <div class="container">
             <div class="section-header text-center mb-3xl">
                 <span class="offering-label">The Team</span>
-                <h2 class="fade-in">The Minds Behind Beyond Pixel</h2>
-                <p class="text-secondary mt-sm fade-in">Combining strategy, AI, and execution to drive your business
+                <h2 class="reveal fade-up">The Minds Behind Beyond Pixel</h2>
+                <p class="text-secondary mt-sm reveal fade-up">Combining strategy, AI, and execution to drive your
+                    business
                     forward.</p>
             </div>
 
-            <div class="founders-grid">
+            <div class="founders-grid stagger-children">
                 <!-- Founder 1 -->
-                <div class="founder-card fade-in">
+                <div class="founder-card reveal scale-in">
                     <div class="founder-image-container">
-                        <img src="../images/founder.png"
-                            alt="Arpit" class="founder-image">
+                        <img src="../images/founder.png" alt="Arpit" class="founder-image">
                     </div>
                     <div class="founder-info text-center mt-lg">
                         <h3>Arpit Upadhyay Founder</h3>
                         <p class="founder-role text-accent">Healthcare AI & Cardiac Technology Specialist</p>
-                        <p class="founder-bio mt-md"> <strong>For the last 17+ years</strong>, Arpit has lived inside hospitals, cath labs, and diagnostics networks across India and Africa—working with cardiologists, administrators, and government programs to fix very real problems, not just deploy software.</p>
+                        <p class="founder-bio mt-md"> <strong>For the last 17+ years</strong>, Arpit has lived inside
+                            hospitals, cath labs, and diagnostics networks across India and Africa—working with
+                            cardiologists, administrators, and government programs to fix very real problems, not just
+                            deploy software.</p>
                         <p class="founder-bio mt-md">
-  He has led implementations in <strong>cardiac screening, tele-cardiology, and AI-enabled diagnostics, giving him a front-row view of long queues, burnout, leakages, and missed diagnoses.</strong>  That experience is what shapes Beyond Pixel: every solution is designed to work in the chaos of real healthcare, with your clinicians and operations at the center.
+                            He has led implementations in <strong>cardiac screening, tele-cardiology, and AI-enabled
+                                diagnostics, giving him a front-row view of long queues, burnout, leakages, and missed
+                                diagnoses.</strong> That experience is what shapes Beyond Pixel: every solution is
+                            designed to work in the chaos of real healthcare, with your clinicians and operations at the
+                            center.
                         </p>
                         <a href="#" class="linkedin-link mt-md">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -148,9 +156,9 @@
             <div class="footer-grid">
                 <!-- Left: Logo & Positioning -->
                 <div class="footer-brand">
-                        <div class="flex">
+                    <div class="flex">
                         <img src="../images/logo.png" alt="image" class="logo">
-                    <a href="#" class="nav-logo">Beyond Pixel</a>
+                        <a href="#" class="nav-logo">Beyond Pixel</a>
                     </div>
                     <p class="mt-sm">Transforming businesses with Intelligence and Impact. We bridge the gap between AI
                         potential and business outcomes.</p>
@@ -159,7 +167,7 @@
                 <!-- Center: Navigation Links -->
                 <div class="footer-links">
                     <h4>Navigation</h4>
-                 <ul>
+                    <ul>
                         <li><a href="../index.html#how-we-work">How We Work</a></li>
                         <li><a href="offerings.html">Offerings</a></li>
                         <li><a href="../index.html#insights">Insights</a></li>

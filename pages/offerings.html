@@ -21,12 +21,12 @@
     <!-- Sticky Navigation -->
     <nav class="nav" id="navbar">
         <div class="nav-container">
-               <div class="flex">
-                            <img src="../images/logo.png" alt="logo" class="logo">
-            <a href="#" class="nav-logo">Beyond Pixel</a>
+            <div class="flex">
+                <img src="../images/logo.png" alt="logo" class="logo">
+                <a href="#" class="nav-logo">Beyond Pixel</a>
             </div>
 
-              <ul class="nav-menu" id="navMenu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="../index.html#home" class="nav-link">Home</a></li>
                 <li><a href="offerings.html" class="nav-link active">Offerings</a></li>
                 <li><a href="../index.html#how-we-work" class="nav-link">How We Work</a></li>
@@ -45,9 +45,10 @@
 
     <!-- Section 1: Page Intro -->
     <section class="page-intro section-lg">
-        <div class="container text-center">
-            <h1 class="fade-in">What We Offer</h1>
-            <p class="hero-description  mt-md fade-in" style="max-width: 800px;">
+        <canvas id="hero-particles" class="particles-canvas"></canvas>
+        <div class="container text-center reveal fade-up">
+            <h1>What We Offer</h1>
+            <p class="hero-description mt-md" style="max-width: 800px;">
                 We bridge the gap between AI potential and business results. Whether through our automated lead
                 generation platform or custom strategic consulting, we help you build the systems of tomorrow.
             </p>
@@ -57,13 +58,13 @@
     <!-- Section 2: AI SaaS Platform (Deep Dive) -->
     <section class="saas-deep-dive">
         <div class="container">
-            <div class="section-header text-center mb-3xl">
+            <div class="section-header text-center mb-3xl reveal fade-up">
                 <span class="offering-label">The Platform</span>
-                <h2 class="fade-in">AI-Powered Lead Generation SaaS</h2>
+                <h2>AI-Powered Lead Generation SaaS</h2>
             </div>
 
             <!-- Deep Dive Row 1: Problem -->
-            <div class="alternating-row mb-3xl">
+            <div class="alternating-row mb-3xl reveal fade-left">
                 <div class="alternating-content fade-in">
                     <h3 class="text-accent mb-sm">The Problem Solved</h3>
                     <p>Manual lead discovery and generic outreach are no longer effective in a saturated market.
@@ -87,7 +88,7 @@
             </div>
 
             <!-- Deep Dive Row 2: How it works -->
-            <div class="alternating-row row-reverse mb-3xl">
+            <div class="alternating-row row-reverse mb-3xl reveal fade-right">
                 <div class="alternating-content fade-in">
                     <h3 class="text-accent mb-sm">How Vertical AI Works</h3>
                     <p>Our intelligent engine scans multi-channel data points to identify high-intent prospects based on
@@ -169,8 +170,8 @@
                 <p class="text-secondary mt-sm">High-impact, tailored strategies for complex enterprise needs.</p>
             </div>
 
-            <div class="consulting-framework mt-2xl">
-                <div class="framework-step-large fade-in">
+            <div class="consulting-framework mt-2xl stagger-children">
+                <div class="framework-step-large reveal fade-up pulse-hover">
                     <div class="framework-number">1</div>
                     <h3>Consult</h3>
                     <p>We start by understanding your unique business DNA. We identify bottlenecks and map out where AI

@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../CSS/style.css">    
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/contact.css">
 </head>
 
@@ -21,12 +21,12 @@
     <!-- Sticky Navigation -->
     <nav class="nav" id="navbar">
         <div class="nav-container">
-                 <div class="flex">
-                            <img src="../images/logo.png" alt="logo" class="logo">
-            <a href="#" class="nav-logo">Beyond Pixel</a>
+            <div class="flex">
+                <img src="../images/logo.png" alt="logo" class="logo">
+                <a href="#" class="nav-logo">Beyond Pixel</a>
             </div>
 
-                <ul class="nav-menu" id="navMenu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="../index.html#home" class="nav-link">Home</a></li>
                 <li><a href="offerings.html" class="nav-link">Offerings</a></li>
                 <li><a href="../index.html#how-we-work" class="nav-link">How We Work</a></li>
@@ -45,9 +45,10 @@
 
     <!-- Page Intro -->
     <section class="page-intro section-lg">
-        <div class="container">
-            <h1 class="fade-in">Get in Touch</h1>
-            <p class="hero-description mt-md fade-in" style="max-width: 600px;">
+        <canvas id="hero-particles" class="particles-canvas"></canvas>
+        <div class="container reveal fade-up">
+            <h1>Get in Touch</h1>
+            <p class="hero-description mt-md" style="max-width: 600px;">
                 Ready to transform your business with intelligence? Reach out to explore our platform or book a
                 strategic consulting session.
             </p>
@@ -59,7 +60,7 @@
         <div class="container">
             <div class="contact-grid">
                 <!-- Left: Contact Form -->
-                <div class="contact-form-container fade-in">
+                <div class="contact-form-container reveal fade-left">
                     <h3 class="mb-lg">Send us a message</h3>
                     <form action="#" class="main-contact-form">
                         <div class="form-row">
@@ -91,9 +92,9 @@
                 </div>
 
                 <!-- Right: Other Options -->
-                <div class="contact-methods-container fade-in">
+                <div class="contact-methods-container stagger-children">
                     <!-- Calendly Placeholder -->
-                    <div class="method-card calendly-card mb-xl">
+                    <div class="method-card calendly-card mb-xl reveal fade-right pulse-hover">
                         <div class="method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
@@ -118,7 +119,8 @@
                         <div class="method-content">
                             <h4>Chat on WhatsApp</h4>
                             <p>Get instant answers to your questions.</p>
-                            <a href="https://wa.me/919620999960?text=Hi%20there!" class="btn btn-secondary btn-sm mt-sm">Start Chat</a>
+                            <a href="https://wa.me/919620999960?text=Hi%20there!"
+                                class="btn btn-secondary btn-sm mt-sm">Start Chat</a>
                         </div>
                     </div>
 
@@ -145,14 +147,14 @@
     <section class="identity-section section-lg bg-light">
         <div class="container">
             <div class="identity-grid">
-                <div class="identity-text fade-in">
+                <div class="identity-text reveal fade-left">
                     <span class="offering-label">Our Base</span>
                     <h2 class="mt-sm">Beyond Pixel Ventures</h2>
                     <p class="lead mt-md">Mumbai, India</p>
                     <p class="text-secondary">Innovating from the heart of India's tech hub, bringing world-class AI
                         systems to global enterprises.</p>
                 </div>
-                <div class="identity-visual fade-in">
+                <div class="identity-visual reveal fade-right">
                     <div class="mumbai-banner">
                         <span class="banner-tag">AI FROM INDIA, TO THE WORLD</span>
                     </div>
@@ -167,9 +169,9 @@
             <div class="footer-grid">
                 <!-- Left: Logo & Positioning -->
                 <div class="footer-brand">
-                          <div class="flex">
+                    <div class="flex">
                         <img src="../images/logo.png" alt="image" class="logo">
-                    <a href="#" class="nav-logo">Beyond Pixel</a>
+                        <a href="#" class="nav-logo">Beyond Pixel</a>
                     </div>
                     <p class="mt-sm">Transforming businesses with Intelligence and Impact. We bridge the gap between AI
                         potential and business outcomes.</p>
@@ -178,7 +180,7 @@
                 <!-- Center: Navigation Links -->
                 <div class="footer-links">
                     <h4>Navigation</h4>
-                     <ul>
+                    <ul>
                         <li><a href="../index.html#how-we-work">How We Work</a></li>
                         <li><a href="offerings.html">Offerings</a></li>
                         <li><a href="../index.html#insights">Insights</a></li>

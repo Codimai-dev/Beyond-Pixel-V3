@@ -318,34 +318,84 @@ section {
 }
 
 /* ============================================
-   ANIMATIONS
+   ANIMATIONS & REVEAL SYSTEM
    ============================================ */
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(to right, var(--color-accent), var(--color-accent-hover));
+  z-index: 1000;
+  transition: width 0.1s ease-out;
 }
 
-.fade-in, .pain-point-item { 
-  opacity: 0; 
-  transform: translateY(20px); 
+/* Base Reveal Classes */
+.reveal {
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
 }
 
-.fade-in.visible, .pain-point-item.visible { 
-  opacity: 1; 
-  transform: translateY(0);
+.reveal.visible {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Variants */
+.fade-up { transform: translateY(40px); }
+.fade-down { transform: translateY(-40px); }
+.fade-left { transform: translateX(-40px); }
+.fade-right { transform: translateX(40px); }
+.scale-in { transform: scale(0.9); }
+
+/* Staggered Child Utilities */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(20px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Staggered transition for pain points */
-.pain-point-item:nth-child(1) { transition-delay: 0.1s; }
-.pain-point-item:nth-child(2) { transition-delay: 0.2s; }
-.pain-point-item:nth-child(3) { transition-delay: 0.3s; }
-.pain-point-item:nth-child(4) { transition-delay: 0.4s; }
+.stagger-children.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Specific Child Delays (for small lists) */
+.stagger-children.visible > *:nth-child(1) { transition-delay: 0.1s; }
+.stagger-children.visible > *:nth-child(2) { transition-delay: 0.2s; }
+.stagger-children.visible > *:nth-child(3) { transition-delay: 0.3s; }
+.stagger-children.visible > *:nth-child(4) { transition-delay: 0.4s; }
+.stagger-children.visible > *:nth-child(5) { transition-delay: 0.5s; }
+.stagger-children.visible > *:nth-child(6) { transition-delay: 0.6s; }
+
+/* Legacy support/simplified use */
+.fade-in { 
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible { 
+  opacity: 1; 
+  transform: translateY(0);
+}
 
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(59, 130, 246, 0.2); }
+  50% { box-shadow: 0 0 25px rgba(59, 130, 246, 0.5); }
+}
+
+.pulse-hover:hover {
+  animation: pulse-glow 2s infinite;
 }
 
 /* ============================================
@@ -386,6 +436,11 @@ section {
 /* ============================================
    HERO SECTION
    ============================================ */
+.hero, .page-intro, .company-story {
+  position: relative;
+  overflow: hidden;
+}
+
 .hero {
   min-height: calc(100vh - var(--nav-height));
   display: flex;
@@ -393,6 +448,21 @@ section {
   padding: 20px 0;
   background: radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
               radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
+}
+
+.particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero .container, .page-intro .container, .company-story .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-grid {

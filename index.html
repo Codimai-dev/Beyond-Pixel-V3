@@ -44,11 +44,12 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <canvas id="hero-particles" class="particles-canvas"></canvas>
         <div class="container">
             <div class="hero-grid">
                 <!-- Left Column: Text Content -->
-                <div class="hero-content">
-                    <h1 class="hero-title fade-in">
+                <div class="hero-content reveal fade-right">
+                    <h1 class="hero-title">
                         Transforming Businesses with <span id="cnt"></span><span class="cursor">&#124;</span>
                     </h1>
                     <p class="hero-subheadline">
@@ -58,7 +59,7 @@
                         We help businesses across industries integrate AI into core workflows � from customer
                         acquisition to intelligent automation and decision-making.
                     </p>
-                    <div class="hero-actions">
+                    <div class="hero-actions stagger-children">
                         <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
                         <a href="#audit" class="btn btn-secondary btn-lg">Book a Consultation</a>
                     </div>
@@ -80,11 +81,11 @@
     <section class="problem-section" id="problem">
         <div class="container">
             <div class="problem-container text-center">
-                <h2 class="problem-headline fade-in">AI potential exists. <span class="text-accent">Clarity
+                <h2 class="problem-headline reveal fade-up">AI potential exists. <span class="text-accent">Clarity
                         doesn’t.</span></h2>
 
-                <div class="pain-points-grid mt-2xl">
-                    <div class="pain-point-item">
+                <div class="pain-points-grid stagger-children mt-2xl">
+                    <div class="pain-point-item reveal scale-in">
                         <div class="pain-point-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +97,7 @@
                         <p class="pain-point-text">AI tools bought without ROI clarity</p>
                     </div>
 
-                    <div class="pain-point-item">
+                    <div class="pain-point-item reveal scale-in">
                         <div class="pain-point-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +108,7 @@
                         <p class="pain-point-text">Manual processes slowing growth</p>
                     </div>
 
-                    <div class="pain-point-item">
+                    <div class="pain-point-item reveal scale-in">
                         <div class="pain-point-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +121,7 @@
                         <p class="pain-point-text">Automation without governance</p>
                     </div>
 
-                    <div class="pain-point-item">
+                    <div class="pain-point-item reveal scale-in">
                         <div class="pain-point-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -141,14 +142,14 @@
     <!-- Offerings Section -->
     <section class="offerings-section" id="offerings">
         <div class="container">
-            <div class="section-header text-center mb-3xl">
-                <h2 class="fade-in">Our Offerings</h2>
+            <div class="section-header text-center mb-3xl reveal fade-up">
+                <h2>Our Offerings</h2>
                 <p class="text-secondary">Tailored paths to AI transformation.</p>
             </div>
 
-            <div class="offerings-grid">
+            <div class="offerings-grid stagger-children">
                 <!-- Segment 1: SaaS Platform -->
-                <div class="offering-card fade-in">
+                <div class="offering-card reveal fade-up pulse-hover">
                     <div class="offering-content">
                         <span class="offering-label">Platform</span>
                         <h3>AI-Powered Lead Generation SaaS</h3>
@@ -222,7 +223,7 @@
                 </div>
 
                 <!-- Segment 2: Consulting -->
-                <div class="offering-card fade-in">
+                <div class="offering-card reveal fade-up pulse-hover">
                     <div class="offering-content">
                         <span class="offering-label">Services</span>
                         <h3>Custom AI Consulting & Solutions</h3>
@@ -257,13 +258,13 @@
     <!-- How We Work Section -->
     <section class="work-section" id="how-we-work">
         <div class="container">
-            <div class="section-header text-center mb-3xl">
-                <h2 class="fade-in">How We Work</h2>
+            <div class="section-header text-center mb-3xl reveal fade-up">
+                <h2>How We Work</h2>
                 <p class="text-secondary">A structured, low-risk approach to AI integration.</p>
             </div>
 
-            <div class="work-steps-container">
-                <div class="work-step fade-in">
+            <div class="work-steps-container stagger-children">
+                <div class="work-step reveal fade-up">
                     <div class="work-icon-wrapper">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -330,14 +331,14 @@
     <!-- Trust & Credibility Section -->
     <section class="trust-section" id="insights">
         <div class="container">
-            <div class="section-header text-center mb-3xl">
-                <h2 class="fade-in">Case Studies & Success Stories</h2>
+            <div class="section-header text-center mb-3xl reveal fade-up">
+                <h2>Case Studies & Success Stories</h2>
                 <p class="text-secondary">Transformations delivered through intelligent strategy.</p>
             </div>
 
-            <div class="grid grid-3">
+            <div class="grid grid-3 stagger-children">
                 <!-- Placeholder Card 1 -->
-                <div class="case-card fade-in">
+                <div class="case-card reveal fade-up pulse-hover">
                     <div class="case-card-badge">Coming Soon</div>
                     <div class="case-card-content">
                         <h3>SaaS Scaling with AI Automation</h3>
@@ -370,14 +371,14 @@
 
     <!-- Newsletter Section -->
     <section class="newsletter-section">
-        <div class="container">
+        <div class="container reveal scale-in">
             <div class="newsletter-grid">
                 <div class="newsletter-content">
-                    <h2 class="fade-in">AI Insights for Business Leaders</h2>
-                    <p class="text-secondary fade-in">Stay updated on the latest shifts in AI strategy, automation, and
+                    <h2>AI Insights for Business Leaders</h2>
+                    <p class="text-secondary">Stay updated on the latest shifts in AI strategy, automation, and
                         intelligent systems. No fluff, just outcomes.</p>
                 </div>
-                <div class="newsletter-form-container fade-in">
+                <div class="newsletter-form-container">
                     <form action="#" class="newsletter-form">
                         <input type="email" placeholder="Enter your email" required class="newsletter-input">
                         <button type="submit" class="btn btn-primary">Subscribe</button>
