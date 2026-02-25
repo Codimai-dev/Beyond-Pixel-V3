@@ -54,6 +54,7 @@
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .framework-step-large {
@@ -84,14 +85,69 @@
 }
 
 @media (max-width: 1024px) {
-  .alternating-row, .alternating-row.row-reverse {
+  .alternating-row {
     flex-direction: column;
     gap: var(--space-xl);
     text-align: center;
+    align-items: center;
+  }
+  
+  .alternating-row.row-reverse {
+    flex-direction: column-reverse; /* Alternates visual/content order on mobile */
+  }
+
+  .alternating-content {
+    width: 100%;
+  }
+
+  .alternating-content h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .offering-bullets {
+    align-items: flex-start; /* Bubbles/bullets usually look better left-aligned as a centered block */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .offering-bullets li {
+    justify-content: flex-start;
+  }
+
+  .alternating-visual {
+    width: 100%; /* Remove 100vw to keep it within container */
+    padding: 0 var(--space-md); /* Add breathing room on sides */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .placeholder-visual {
+    width: 100%;
+    border-radius: var(--radius-xl); /* Restore rounded corners */
+    aspect-ratio: 16/9;
   }
   
   .consulting-framework {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
+  }
+
+  .benefit-tag {
+    padding: var(--space-sm);
+    font-size: var(--font-size-xs);
+    margin-bottom: 10px;
+  }
+
+  /* Ensure grids within content are also centered/stacked */
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: var(--space-md); /* Increased gap between benefits */
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
   }
 }

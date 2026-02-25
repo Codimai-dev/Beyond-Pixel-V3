@@ -297,9 +297,6 @@
         ${animations[tool.id] || ''}
         <i data-lucide="${iconMap[tool.id] || 'box'}" class="viz-icon-glow" style="color: ${tool.accentColor};"></i>
       </div>
-      <div class="live-badge" ${tool.id === 'automation' ? 'style="background: #a855f7;"' : ''}>
-        ${tool.id === 'automation' ? 'NEXUS CORE ONLINE' : (tool.statusBadge || 'SYSTEM LIVE')}
-      </div>
     `;
   }
 

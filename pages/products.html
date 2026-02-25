@@ -10,7 +10,9 @@
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../CSS/style.css">
@@ -68,65 +70,90 @@
 
                 <!-- Right Column: Creative Neural Hub Animation -->
                 <div class="hero-visual">
-                    <div class="neural-hub-container reveal fade-left">
-                        <!-- Central AI Core -->
-                        <div class="hub-core">
-                            <div class="core-inner"></div>
-                            <div class="core-orbit"></div>
+                    <!-- Desktop: Orbital Hub (hidden on mobile) -->
+                    <div class="hub-wrapper">
+                        <div class="neural-hub-container reveal fade-left">
+                            <div class="hub-core">
+                                <div class="core-inner"></div>
+                                <div class="core-orbit"></div>
+                            </div>
+                            <div class="neural-stages">
+                                <div class="stage-pod p-1">
+                                    <div class="pod-inner">01</div>
+                                </div>
+                                <div class="stage-pod p-2">
+                                    <div class="pod-inner">02</div>
+                                </div>
+                                <div class="stage-pod p-3">
+                                    <div class="pod-inner">03</div>
+                                </div>
+                                <div class="stage-pod p-4">
+                                    <div class="pod-inner">04</div>
+                                </div>
+                                <div class="stage-pod p-5">
+                                    <div class="pod-inner">05</div>
+                                </div>
+                                <div class="stage-pod p-6">
+                                    <div class="pod-inner">06</div>
+                                </div>
+                                <div class="stage-pod p-7">
+                                    <div class="pod-inner">07</div>
+                                </div>
+                                <div class="stage-pod p-8">
+                                    <div class="pod-inner">08</div>
+                                </div>
+                                <div class="stage-pod p-9">
+                                    <div class="pod-inner">09</div>
+                                </div>
+                                <div class="stage-pod p-10">
+                                    <div class="pod-inner">10</div>
+                                </div>
+                                <div class="stage-pod p-11">
+                                    <div class="pod-inner">11</div>
+                                </div>
+                                <div class="stage-pod p-12">
+                                    <div class="pod-inner">12</div>
+                                </div>
+                                <div class="stage-pod p-13">
+                                    <div class="pod-inner">13</div>
+                                </div>
+                            </div>
+                            <svg class="hub-connections" viewBox="0 0 500 500">
+                                <circle class="connection-ring" cx="250" cy="250" r="180" fill="none" />
+                                <circle class="scanning-pulse" cx="250" cy="250" r="180" fill="none" />
+                            </svg>
+                            <div class="hub-bg-particles">
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
                         </div>
+                    </div>
 
-                        <!-- 13 Neural Stages (Glass Pods) -->
-                        <div class="neural-stages">
-                            <div class="stage-pod p-1">
-                                <div class="pod-inner">01</div>
-                            </div>
-                            <div class="stage-pod p-2">
-                                <div class="pod-inner">02</div>
-                            </div>
-                            <div class="stage-pod p-3">
-                                <div class="pod-inner">03</div>
-                            </div>
-                            <div class="stage-pod p-4">
-                                <div class="pod-inner">04</div>
-                            </div>
-                            <div class="stage-pod p-5">
-                                <div class="pod-inner">05</div>
-                            </div>
-                            <div class="stage-pod p-6">
-                                <div class="pod-inner">06</div>
-                            </div>
-                            <div class="stage-pod p-7">
-                                <div class="pod-inner">07</div>
-                            </div>
-                            <div class="stage-pod p-8">
-                                <div class="pod-inner">08</div>
-                            </div>
-                            <div class="stage-pod p-9">
-                                <div class="pod-inner">09</div>
-                            </div>
-                            <div class="stage-pod p-10">
-                                <div class="pod-inner">10</div>
-                            </div>
-                            <div class="stage-pod p-11">
-                                <div class="pod-inner">11</div>
-                            </div>
-                            <div class="stage-pod p-12">
-                                <div class="pod-inner">12</div>
-                            </div>
-                            <div class="stage-pod p-13">
-                                <div class="pod-inner">13</div>
-                            </div>
+                    <!-- Mobile Only: Stage Counter (hidden on desktop, shown ≤768px) -->
+                    <div class="stage-counter">
+                        <div class="sc-stage" style="--i:0" data-num="01" data-name="GEO" data-color="#06b6d4"></div>
+                        <div class="sc-stage" style="--i:1" data-num="02" data-name="Apollo" data-color="#f59e0b"></div>
+                        <div class="sc-stage" style="--i:2" data-num="03" data-name="Clay" data-color="#a855f7"></div>
+                        <div class="sc-stage" style="--i:3" data-num="04" data-name="Brevo" data-color="#f43f5e"></div>
+                        <div class="sc-stage" style="--i:4" data-num="05" data-name="Calendly" data-color="#3b82f6">
                         </div>
-
-                        <!-- Energy Connections (SVG) -->
-                        <svg class="hub-connections" viewBox="0 0 500 500">
-                            <circle class="connection-ring" cx="250" cy="250" r="180" fill="none" />
-                            <circle class="scanning-pulse" cx="250" cy="250" r="180" fill="none" />
-                        </svg>
-
-                        <!-- Background Decorative Particles -->
-                        <div class="hub-bg-particles">
-                            <span></span><span></span><span></span><span></span><span></span>
+                        <div class="sc-stage" style="--i:5" data-num="06" data-name="Gamma" data-color="#ec4899"></div>
+                        <div class="sc-stage" style="--i:6" data-num="07" data-name="Airtable" data-color="#10b981">
+                        </div>
+                        <div class="sc-stage" style="--i:7" data-num="08" data-name="Stripe" data-color="#6366f1"></div>
+                        <div class="sc-stage" style="--i:8" data-num="09" data-name="Notion" data-color="#e2e8f0"></div>
+                        <div class="sc-stage" style="--i:9" data-num="10" data-name="Tally" data-color="#fb923c"></div>
+                        <div class="sc-stage" style="--i:10" data-num="11" data-name="HubSpot" data-color="#f97316">
+                        </div>
+                        <div class="sc-stage" style="--i:11" data-num="12" data-name="Analytics" data-color="#34d399">
+                        </div>
+                        <div class="sc-stage" style="--i:12" data-num="13" data-name="The Hub" data-color="#a855f7">
+                        </div>
+                        <div class="sc-dots">
+                            <span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span>
+                            <span style="--i:3"></span><span style="--i:4"></span><span style="--i:5"></span>
+                            <span style="--i:6"></span><span style="--i:7"></span><span style="--i:8"></span>
+                            <span style="--i:9"></span><span style="--i:10"></span><span style="--i:11"></span>
+                            <span style="--i:12"></span>
                         </div>
                     </div>
                 </div>
@@ -199,6 +226,10 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
+        // Inject --sc-color from data-color so CSS pseudo-elements can use per-stage colors
+        document.querySelectorAll('.sc-stage').forEach(el => {
+            el.style.setProperty('--sc-color', el.dataset.color);
+        });
     </script>
 </body>
 
